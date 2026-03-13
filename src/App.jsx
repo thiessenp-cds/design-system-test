@@ -40,10 +40,7 @@ function HomePage() {
     <div className="app">
       <header className="site-header">
         <div className="site-header__inner">
-          <h1 className="site-header__title">Design System</h1>
-          <p className="site-header__subtitle">
-            A living reference for UI components and design tokens.
-          </p>
+          <h1 className="site-header__title">Design System Component Test</h1>
         </div>
       </header>
 

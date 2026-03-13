@@ -5,5 +5,37 @@
 body {
   margin: 0;
   padding: 0;
+  font: var(--gcds-font-text);
+  color: var(--gcds-text-primary);
+  background: var(--gcds-bg-light);
   -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--gcds-font-families-heading);
+  color: var(--gcds-text-primary);
+  margin: 0;
+}
+
+a {
+  color: var(--gcds-link-default);
+  text-underline-offset: 0.125rem;
+  text-decoration-thickness: 0.0625rem;
+}
+
+a:hover {
+  color: var(--gcds-link-hover);
+  text-decoration-thickness: 0.125rem;
+}
+
+a:visited {
+  color: var(--gcds-link-visited);
+}
+
+code {
+  font-family: var(--gcds-font-families-monospace);
+  font-size: 0.9em;
+  background: var(--gcds-color-grayscale-100);
+  padding: 0.1em 0.35em;
+  border-radius: 0.125rem;
 }

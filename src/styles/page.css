@@ -1,42 +1,42 @@
 /* ── Page layout ─────────────────────────────────────── */
 .page {
-  max-width: 760px;
+  max-width: 48rem;
   margin: 0 auto;
   padding: 2rem 1.5rem 4rem;
 }
 
 .page__breadcrumb {
   margin-bottom: 1.5rem;
-  font-size: 0.9rem;
-}
-
-.page__breadcrumb a {
-  color: #1a4bd4;
-  text-decoration: none;
-}
-
-.page__breadcrumb a:hover {
-  text-decoration: underline;
+  font: var(--gcds-font-text-small);
 }
 
 .page__header {
   margin-bottom: 2.5rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: var(--gcds-border-width-sm) solid var(--gcds-border-default);
 }
 
 .page__title {
-  font-size: 2rem;
-  font-weight: 700;
+  font: var(--gcds-font-h1);
+  color: var(--gcds-text-primary);
   margin: 0 0 0.5rem;
-  letter-spacing: -0.02em;
+}
+
+/* H1 red accent bar — matches GC Design System heading style */
+.page__title::after {
+  content: '';
+  display: block;
+  width: 4.5rem;
+  height: 0.375rem;
+  background: var(--gcds-heading-h1-border-background);
+  margin-top: 0.5rem;
 }
 
 .page__description {
-  font-size: 1rem;
-  color: #4b5563;
-  margin: 0;
-  max-width: 55ch;
+  font: var(--gcds-font-text);
+  color: var(--gcds-text-secondary);
+  margin: 1rem 0 0;
+  max-width: var(--gcds-text-character-limit);
 }
 
 /* ── Example sections ────────────────────────────────── */
@@ -45,23 +45,23 @@
 }
 
 .example__heading {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #374151;
+  font: var(--gcds-font-text-small);
+  font-weight: var(--gcds-font-weights-bold);
+  color: var(--gcds-text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin: 0 0 1rem;
 }
 
 .example__preview {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  background: var(--gcds-bg-white);
+  border: var(--gcds-border-width-sm) solid var(--gcds-border-default);
+  border-radius: var(--gcds-border-radius-md);
   padding: 1.5rem;
 }
 
 .example__value {
   margin: 1rem 0 0;
-  font-size: 0.875rem;
-  color: #6b7280;
+  font: var(--gcds-font-text-small);
+  color: var(--gcds-text-secondary);
 }
