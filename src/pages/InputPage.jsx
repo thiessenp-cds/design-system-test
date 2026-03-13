@@ -17,10 +17,6 @@ export default function InputPage() {
 
       <header className="page__header">
         <h1 className="page__title">Input</h1>
-        <p className="page__description">
-          An input field for short, single-line responses. Supports text, email,
-          password, number, tel, search, and url types.
-        </p>
       </header>
 
       <main className="page__examples">

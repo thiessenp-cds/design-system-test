@@ -1,13 +1,15 @@
 import { HashRouter, Routes, Route, Link } from 'react-router-dom'
 import InputPage from './pages/InputPage'
+import CheckboxesPage from './pages/CheckboxesPage'
+import RadiosPage from './pages/RadiosPage'
 import './App.css'
 
 const components = [
   { name: 'Input', path: 'input', status: 'done' },
   { name: 'Textarea', path: 'textarea', status: 'planned' },
   { name: 'Select', path: 'select', status: 'planned' },
-  { name: 'Checkboxes', path: 'checkboxes', status: 'planned' },
-  { name: 'Radios', path: 'radios', status: 'planned' },
+  { name: 'Checkboxes', path: 'checkboxes', status: 'done' },
+  { name: 'Radios', path: 'radios', status: 'done' },
   { name: 'File Uploader', path: 'file-uploader', status: 'planned' },
   { name: 'Date Input', path: 'date-input', status: 'planned' },
   { name: 'Search', path: 'search', status: 'planned' },
@@ -68,6 +70,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/input" element={<InputPage />} />
+        <Route path="/checkboxes" element={<CheckboxesPage />} />
+        <Route path="/radios" element={<RadiosPage />} />
       </Routes>
     </HashRouter>
   )
