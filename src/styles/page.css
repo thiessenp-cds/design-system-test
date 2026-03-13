@@ -1,0 +1,67 @@
+/* ── Page layout ─────────────────────────────────────── */
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.page__breadcrumb {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.page__breadcrumb a {
+  color: #1a4bd4;
+  text-decoration: none;
+}
+
+.page__breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.page__header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.page__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.page__description {
+  font-size: 1rem;
+  color: #4b5563;
+  margin: 0;
+  max-width: 55ch;
+}
+
+/* ── Example sections ────────────────────────────────── */
+.example {
+  margin-bottom: 2.5rem;
+}
+
+.example__heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 1rem;
+}
+
+.example__preview {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.example__value {
+  margin: 1rem 0 0;
+  font-size: 0.875rem;
+  color: #6b7280;
+}

@@ -66,6 +66,9 @@
   border-radius: 8px;
   padding: 1.25rem 1.5rem;
   transition: box-shadow 0.15s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .component-card:hover {
