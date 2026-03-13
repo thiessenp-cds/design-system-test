@@ -7,8 +7,7 @@
 
 /* ── Header ──────────────────────────────────────────── */
 .site-header {
-  background: var(--gcds-bg-primary);
-  color: var(--gcds-text-light);
+  border-bottom: var(--gcds-border-width-sm) solid var(--gcds-border-default);
   padding: 2.5rem 1.5rem;
 }
 
@@ -19,16 +18,17 @@
 
 .site-header__title {
   font: var(--gcds-font-h1);
-  color: var(--gcds-text-light);
-  margin: 0 0 0.5rem;
+  color: var(--gcds-text-primary);
+  margin: 0;
 }
 
-.site-header__subtitle {
-  font: var(--gcds-font-text);
-  color: var(--gcds-text-light);
-  opacity: 0.85;
-  margin: 0;
-  max-width: var(--gcds-text-character-limit);
+.site-header__title::after {
+  content: '';
+  display: block;
+  width: 4.5rem;
+  height: 0.375rem;
+  background: var(--gcds-heading-h1-border-background);
+  margin-top: 0.5rem;
 }
 
 /* ── Main ────────────────────────────────────────────── */
@@ -61,64 +61,28 @@
 .component-card {
   background: var(--gcds-bg-white);
   border: var(--gcds-border-width-sm) solid var(--gcds-border-default);
-  border-radius: var(--gcds-border-radius-md);
+  border-left: 4px solid var(--gcds-heading-h1-border-background);
   padding: 1.25rem 1.5rem;
-  transition: box-shadow 0.15s ease;
   text-decoration: none;
   color: var(--gcds-text-primary);
   display: block;
+  transition: box-shadow 0.15s ease;
 }
 
 a.component-card:hover {
-  background: var(--gcds-color-blue-50);
   box-shadow: var(--gcds-card-box-shadow);
 }
 
-.component-card__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
+.component-card--planned {
+  opacity: 0.45;
+  cursor: default;
 }
 
 .component-card__name {
   font-family: var(--gcds-font-families-heading);
-  font-size: var(--gcds-font-sizes-h6);
+  font-size: var(--gcds-font-sizes-h5);
   font-weight: var(--gcds-font-weights-bold);
   margin: 0;
-}
-
-.component-card__description {
-  font: var(--gcds-font-text-small);
-  color: var(--gcds-text-secondary);
-  margin: 0;
-}
-
-/* ── Badge ───────────────────────────────────────────── */
-.badge {
-  display: inline-block;
-  font-family: var(--gcds-font-families-body);
-  font-size: 0.75rem;
-  font-weight: var(--gcds-font-weights-semibold);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  padding: 0.2em 0.65em;
-  border-radius: var(--gcds-border-radius-lg);
-}
-
-.badge--planned {
-  background: var(--gcds-color-grayscale-150);
-  color: var(--gcds-color-grayscale-800);
-}
-
-.badge--in-progress {
-  background: var(--gcds-alert-warning-background);
-  color: var(--gcds-color-yellow-800);
-}
-
-.badge--done {
-  background: var(--gcds-alert-success-background);
-  color: var(--gcds-color-green-800);
 }
 
 /* ── Footer ──────────────────────────────────────────── */

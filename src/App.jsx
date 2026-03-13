@@ -20,24 +20,14 @@ const components = [
   { name: 'Search', path: 'search', status: 'done' },
 ]
 
-function StatusBadge({ status }) {
-  return <span className={`badge badge--${status}`}>{status}</span>
-}
-
 function ComponentCard({ name, path, status }) {
   const isReady = status === 'done' || status === 'in-progress'
   const CardTag = isReady ? Link : 'div'
   const linkProps = isReady ? { to: `/${path}` } : {}
 
   return (
-    <CardTag className="component-card" {...linkProps}>
-      <div className="component-card__header">
-        <h3 className="component-card__name">{name}</h3>
-        <StatusBadge status={status} />
-      </div>
-      <p className="component-card__description">
-        {isReady ? 'View component examples →' : 'Component showcase coming soon.'}
-      </p>
+    <CardTag className={`component-card${isReady ? '' : ' component-card--planned'}`} {...linkProps}>
+      <h3 className="component-card__name">{name}</h3>
     </CardTag>
   )
 }
@@ -47,7 +37,7 @@ function HomePage() {
     <div className="app">
       <header className="site-header">
         <div className="site-header__inner">
-          <h1 className="site-header__title">Design System Component Test</h1>
+          <h1 className="site-header__title">GC Design System Components</h1>
         </div>
       </header>
 
