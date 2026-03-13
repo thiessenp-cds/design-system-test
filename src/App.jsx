@@ -10,25 +10,21 @@ import SearchPage from './pages/SearchPage'
 import './App.css'
 
 const components = [
-  { name: 'Input', path: 'input', status: 'done' },
-  { name: 'Textarea', path: 'textarea', status: 'done' },
-  { name: 'Select', path: 'select', status: 'done' },
-  { name: 'Checkboxes', path: 'checkboxes', status: 'done' },
-  { name: 'Radios', path: 'radios', status: 'done' },
-  { name: 'File Uploader', path: 'file-uploader', status: 'done' },
-  { name: 'Date Input', path: 'date-input', status: 'done' },
-  { name: 'Search', path: 'search', status: 'done' },
+  { name: 'Input', path: 'input' },
+  { name: 'Textarea', path: 'textarea'},
+  { name: 'Select', path: 'select'},
+  { name: 'Checkboxes', path: 'checkboxes' },
+  { name: 'Radios', path: 'radios' },
+  { name: 'File Uploader', path: 'file-uploader' },
+  { name: 'Date Input', path: 'date-input' },
+  { name: 'Search', path: 'search' },
 ]
 
-function ComponentCard({ name, path, status }) {
-  const isReady = status === 'done' || status === 'in-progress'
-  const CardTag = isReady ? Link : 'div'
-  const linkProps = isReady ? { to: `/${path}` } : {}
-
+function ComponentCard({ name, path }) {
   return (
-    <CardTag className={`component-card${isReady ? '' : ' component-card--planned'}`} {...linkProps}>
+    <Link className={`component-card component-card--planned'}`} to={path}>
       <h3 className="component-card__name">{name}</h3>
-    </CardTag>
+    </Link>
   )
 }
 
@@ -37,7 +33,7 @@ function HomePage() {
     <div className="app">
       <header className="site-header">
         <div className="site-header__inner">
-          <h1 className="site-header__title">GC Design System Components</h1>
+          <h1 className="site-header__title">Design System Component Test</h1>
         </div>
       </header>
 
@@ -46,7 +42,7 @@ function HomePage() {
           <h2 className="section__heading">Form Components</h2>
           <div className="component-grid">
             {components.map((c) => (
-              <ComponentCard key={c.name} name={c.name} path={c.path} status={c.status} />
+              <ComponentCard key={c.name} name={c.name} path={c.path} />
             ))}
           </div>
         </section>

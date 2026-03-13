@@ -1,6 +1,6 @@
 /* ── Page layout ─────────────────────────────────────── */
 .page {
-  max-width: 48rem;
+  max-width: 72rem;
   margin: 0 auto;
   padding: 2rem 1.5rem 4rem;
 }
@@ -50,7 +50,21 @@
   color: var(--gcds-text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  margin: 0 0 1rem;
+  margin: 0 0 0.75rem;
+}
+
+/* Two-column layout: component preview (left) + issues panel (right) */
+.example__body {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+@media (max-width: 52rem) {
+  .example__body {
+    grid-template-columns: 1fr;
+  }
 }
 
 .example__preview {
@@ -64,4 +78,71 @@
   margin: 1rem 0 0;
   font: var(--gcds-font-text-small);
   color: var(--gcds-text-secondary);
+}
+
+/* ── Known issues panel ──────────────────────────────── */
+.example__issues {
+  border: var(--gcds-border-width-sm) solid var(--gcds-border-default);
+  border-radius: var(--gcds-border-radius-md);
+  overflow: hidden;
+}
+
+.example__issues-heading {
+  font: var(--gcds-font-text-small);
+  font-weight: var(--gcds-font-weights-bold);
+  color: var(--gcds-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0;
+  padding: 0.625rem 1rem;
+  background: var(--gcds-bg-light);
+  border-bottom: var(--gcds-border-width-sm) solid var(--gcds-border-default);
+}
+
+.example__issues-empty {
+  font: var(--gcds-font-text-small);
+  color: var(--gcds-text-secondary);
+  font-style: italic;
+  margin: 0;
+  padding: 0.75rem 1rem;
+}
+
+/* ── Issues table ────────────────────────────────────── */
+.issues-table {
+  width: 100%;
+  border-collapse: collapse;
+  font: var(--gcds-font-text-small);
+}
+
+.issues-table th {
+  text-align: left;
+  padding: 0.5rem 1rem;
+  font-weight: var(--gcds-font-weights-semibold);
+  color: var(--gcds-text-secondary);
+  background: var(--gcds-bg-light);
+  border-bottom: var(--gcds-border-width-sm) solid var(--gcds-border-default);
+}
+
+.issues-table td {
+  padding: 0.625rem 1rem;
+  color: var(--gcds-text-primary);
+  vertical-align: top;
+  border-bottom: var(--gcds-border-width-sm) solid var(--gcds-border-default);
+}
+
+.issues-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.issues-table__tickets {
+  white-space: nowrap;
+}
+
+.issues-table__ticket-link {
+  display: inline-block;
+  margin-right: 0.35rem;
+}
+
+.issues-table__ticket-link:last-child {
+  margin-right: 0;
 }

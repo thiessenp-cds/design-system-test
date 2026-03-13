@@ -25,6 +25,14 @@ npm run deploy
 
 Edit `src/App.jsx` to add new component entries to the `components` array, then create dedicated pages or sections to render each component.
 
+To add a known issue to a component page section test e.g.
+```
+<IssueTable issues={[
+  { combo: 'Chrome 120 + NVDA 2023.3', description: 'Label not announced on focus.' }
+]} />
+```
+
+
 ## Tech Stack
 
 - [React 19](https://react.dev)
