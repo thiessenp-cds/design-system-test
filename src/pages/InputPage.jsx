@@ -125,7 +125,15 @@ export default function InputPage() {
                 onGcdsInput={(e) => setNumberValue(e.detail)}
               />
             </div>
-            <IssueTable issues={[]} />
+            <IssueTable issues={[
+              {
+                combo: 'All browsers (mouse/touch users)',
+                description: 'Increment/decrement spinner buttons are hidden by CSS, preventing pointer users from adjusting the value with the controls.',
+                tickets: [
+                  { text: '#1011', href: 'https://github.com/cds-snc/gcds-components/issues/1011' },
+                ],
+              },
+            ]} />
           </div>
         </section>
 

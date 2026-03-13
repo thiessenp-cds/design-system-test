@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { GcdsRadios } from '@gcds-core/components-react'
 import { Link } from 'react-router-dom'
+import IssueTable from '../components/IssueTable'
 import '../styles/page.css'
 
 const yesNoOptions = [
@@ -34,10 +35,6 @@ export default function RadiosPage() {
 
       <header className="page__header">
         <h1 className="page__title">Radios</h1>
-        <p className="page__description">
-          Radio buttons let a person select exactly one option from a list. Use
-          them when only one answer is valid.
-        </p>
       </header>
 
       <main className="page__examples">
@@ -45,86 +42,101 @@ export default function RadiosPage() {
         {/* Basic yes / no */}
         <section className="example">
           <h2 className="example__heading">Basic radios</h2>
-          <div className="example__preview">
-            <GcdsRadios
-              name="yes-no"
-              legend="Do you agree?"
-              options={JSON.stringify(yesNoOptions)}
-              onGcdsChange={(e) => setYesNo(e.detail)}
-            />
-            {yesNo && (
-              <p className="example__value">
-                Selected: <code>{yesNo}</code>
-              </p>
-            )}
+          <div className="example__body">
+            <div className="example__preview">
+              <GcdsRadios
+                name="yes-no"
+                legend="Do you agree?"
+                options={JSON.stringify(yesNoOptions)}
+                onGcdsChange={(e) => setYesNo(e.detail)}
+              />
+              {yesNo && (
+                <p className="example__value">
+                  Selected: <code>{yesNo}</code>
+                </p>
+              )}
+            </div>
+            <IssueTable issues={[]} />
           </div>
         </section>
 
         {/* Options with hint text */}
         <section className="example">
           <h2 className="example__heading">Options with hint text</h2>
-          <div className="example__preview">
-            <GcdsRadios
-              name="contact-pref"
-              legend="How would you like to be contacted?"
-              hint="Choose one option."
-              options={JSON.stringify(contactOptions)}
-              required
-              onGcdsChange={(e) => setContact(e.detail)}
-            />
-            {contact && (
-              <p className="example__value">
-                Selected: <code>{contact}</code>
-              </p>
-            )}
+          <div className="example__body">
+            <div className="example__preview">
+              <GcdsRadios
+                name="contact-pref"
+                legend="How would you like to be contacted?"
+                hint="Choose one option."
+                options={JSON.stringify(contactOptions)}
+                required
+                onGcdsChange={(e) => setContact(e.detail)}
+              />
+              {contact && (
+                <p className="example__value">
+                  Selected: <code>{contact}</code>
+                </p>
+              )}
+            </div>
+            <IssueTable issues={[]} />
           </div>
         </section>
 
         {/* Pre-selected */}
         <section className="example">
           <h2 className="example__heading">Pre-selected option</h2>
-          <div className="example__preview">
-            <GcdsRadios
-              name="size"
-              legend="Choose a size"
-              options={JSON.stringify(
-                sizeOptions.map((o) => ({ ...o, checked: o.value === 'md' }))
+          <div className="example__body">
+            <div className="example__preview">
+              <GcdsRadios
+                name="size"
+                legend="Choose a size"
+                options={JSON.stringify(
+                  sizeOptions.map((o) => ({ ...o, checked: o.value === 'md' }))
+                )}
+                onGcdsChange={(e) => setSize(e.detail)}
+              />
+              {size && (
+                <p className="example__value">
+                  Selected: <code>{size}</code>
+                </p>
               )}
-              onGcdsChange={(e) => setSize(e.detail)}
-            />
-            {size && (
-              <p className="example__value">
-                Selected: <code>{size}</code>
-              </p>
-            )}
+            </div>
+            <IssueTable issues={[]} />
           </div>
         </section>
 
         {/* Disabled */}
         <section className="example">
           <h2 className="example__heading">Disabled radios</h2>
-          <div className="example__preview">
-            <GcdsRadios
-              name="disabled-radios"
-              legend="Unavailable options"
-              hint="These options are currently unavailable."
-              options={JSON.stringify(yesNoOptions)}
-              disabled
-            />
+          <div className="example__body">
+            <div className="example__preview">
+              <GcdsRadios
+                name="disabled-radios"
+                legend="Unavailable options"
+                hint="These options are currently unavailable."
+                options={JSON.stringify(yesNoOptions)}
+                disabled
+              />
+            </div>
+            <IssueTable issues={[]} />
           </div>
         </section>
 
         {/* Error state */}
         <section className="example">
           <h2 className="example__heading">Radios with error</h2>
-          <div className="example__preview">
-            <GcdsRadios
-              name="required-radio"
-              legend="You must select an option"
-              options={JSON.stringify(yesNoOptions)}
-              required
-              errorMessage="Select yes or no to continue."
-            />
+          <div className="example__body">
+            <div className="example__preview">
+              <GcdsRadios
+                name="required-radio"
+                legend="You must select an option"
+                options={JSON.stringify(yesNoOptions)}
+                required
+                errorMessage="Select yes or no to continue."
+              />
+            </div>
+            <IssueTable issues={[]} />
           </div>
         </section>
 
