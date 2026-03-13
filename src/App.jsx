@@ -4,6 +4,9 @@ import CheckboxesPage from './pages/CheckboxesPage'
 import RadiosPage from './pages/RadiosPage'
 import TextareaPage from './pages/TextareaPage'
 import SelectPage from './pages/SelectPage'
+import FileUploaderPage from './pages/FileUploaderPage'
+import DateInputPage from './pages/DateInputPage'
+import SearchPage from './pages/SearchPage'
 import './App.css'
 
 const components = [
@@ -12,9 +15,9 @@ const components = [
   { name: 'Select', path: 'select', status: 'done' },
   { name: 'Checkboxes', path: 'checkboxes', status: 'done' },
   { name: 'Radios', path: 'radios', status: 'done' },
-  { name: 'File Uploader', path: 'file-uploader', status: 'planned' },
-  { name: 'Date Input', path: 'date-input', status: 'planned' },
-  { name: 'Search', path: 'search', status: 'planned' },
+  { name: 'File Uploader', path: 'file-uploader', status: 'done' },
+  { name: 'Date Input', path: 'date-input', status: 'done' },
+  { name: 'Search', path: 'search', status: 'done' },
 ]
 
 function StatusBadge({ status }) {
@@ -76,6 +79,9 @@ export default function App() {
         <Route path="/radios" element={<RadiosPage />} />
         <Route path="/textarea" element={<TextareaPage />} />
         <Route path="/select" element={<SelectPage />} />
+        <Route path="/file-uploader" element={<FileUploaderPage />} />
+        <Route path="/date-input" element={<DateInputPage />} />
+        <Route path="/search" element={<SearchPage />} />
       </Routes>
     </HashRouter>
   )
