@@ -41,6 +41,11 @@
 }
 
 /* ── Section ─────────────────────────────────────────── */
+
+.section {
+  margin-bottom: 3rem;
+}
+
 .section__heading {
   font: var(--gcds-font-text-small);
   font-weight: var(--gcds-font-weights-bold);
@@ -48,6 +53,10 @@
   letter-spacing: 0.08em;
   color: var(--gcds-text-secondary);
   margin: 0 0 1.25rem;
+}
+
+.section__heading--mb {
+  margin-bottom: var(--gcds-spacing-400); /* 2rem / 32px */
 }
 
 /* ── Component Grid ──────────────────────────────────── */

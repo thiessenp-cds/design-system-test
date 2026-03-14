@@ -1,0 +1,52 @@
+/* ── Full-width form layout ───────────────────────────── */
+.example__body--full {
+  grid-template-columns: 1fr;
+}
+
+/* ── Form field spacing ──────────────────────────────── */
+.example__preview form > * + * {
+  margin-top: 1.5rem;
+}
+
+/* ── Form actions ────────────────────────────────────── */
+.form-actions {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: var(--gcds-border-width-sm) solid var(--gcds-border-default);
+}
+
+/* ── Success state ───────────────────────────────────── */
+.form-success {
+  background: var(--gcds-color-green-50, #f0faf0);
+  border: var(--gcds-border-width-sm) solid var(--gcds-color-green-400, #27a827);
+  border-left: 4px solid var(--gcds-color-green-400, #27a827);
+  border-radius: var(--gcds-border-radius-md);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.form-success__icon {
+  font-size: 1.5rem;
+  color: var(--gcds-color-green-400, #27a827);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.form-success__heading {
+  font: var(--gcds-font-h3);
+  color: var(--gcds-text-primary);
+  margin: 0 0 0.5rem;
+}
+
+.form-success__message {
+  font: var(--gcds-font-text);
+  color: var(--gcds-text-secondary);
+  margin: 0;
+}
+
+.form-success__actions {
+  margin-top: 1.5rem;
+}

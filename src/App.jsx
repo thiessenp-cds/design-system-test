@@ -7,6 +7,7 @@ import SelectPage from './pages/SelectPage'
 import FileUploaderPage from './pages/FileUploaderPage'
 import DateInputPage from './pages/DateInputPage'
 import SearchPage from './pages/SearchPage'
+import CompleteFormPage from './pages/CompleteFormPage'
 import './App.css'
 
 const components = [
@@ -39,6 +40,12 @@ function HomePage() {
 
       <main className="main">
         <section className="section">
+          <h2 className="section__heading">Form Examples</h2>
+          <div className="component-grid">
+            <ComponentCard key={"Contact Form"} name={"Contact Form"} path={"complete-form"} />
+          </div>
+        </section>
+        <section className="section">
           <h2 className="section__heading">Form Components</h2>
           <div className="component-grid">
             {components.map((c) => (
@@ -68,6 +75,7 @@ export default function App() {
         <Route path="/file-uploader" element={<FileUploaderPage />} />
         <Route path="/date-input" element={<DateInputPage />} />
         <Route path="/search" element={<SearchPage />} />
+        <Route path="/complete-form" element={<CompleteFormPage />} />
       </Routes>
     </HashRouter>
   )
