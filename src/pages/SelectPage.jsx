@@ -20,7 +20,6 @@ export default function SelectPage() {
 
       <main className="page__examples">
 
-        {/* Basic */}
         <section className="example">
           <h2 className="example__heading">Basic select</h2>
           <div className="example__body">
@@ -56,7 +55,6 @@ export default function SelectPage() {
           </div>
         </section>
 
-        {/* Required with pre-selected value */}
         <section className="example">
           <h2 className="example__heading">Required with pre-selected value</h2>
           <div className="example__body">
@@ -81,7 +79,6 @@ export default function SelectPage() {
           </div>
         </section>
 
-        {/* Grouped options */}
         <section className="example">
           <h2 className="example__heading">Grouped options</h2>
           <div className="example__body">
@@ -114,7 +111,6 @@ export default function SelectPage() {
           </div>
         </section>
 
-        {/* Disabled */}
         <section className="example">
           <h2 className="example__heading">Disabled select</h2>
           <div className="example__body">
@@ -135,7 +131,6 @@ export default function SelectPage() {
           </div>
         </section>
 
-        {/* Error state */}
         <section className="example">
           <h2 className="example__heading">Select with error</h2>
           <div className="example__body">

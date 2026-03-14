@@ -16,7 +16,6 @@ export default function FileUploaderPage() {
 
       <main className="page__examples">
 
-        {/* Basic */}
         <section className="example">
           <h2 className="example__heading">Basic file uploader</h2>
           <div className="example__body">
@@ -31,7 +30,6 @@ export default function FileUploaderPage() {
           </div>
         </section>
 
-        {/* Hint and required */}
         <section className="example">
           <h2 className="example__heading">With hint and required</h2>
           <div className="example__body">
@@ -48,7 +46,6 @@ export default function FileUploaderPage() {
           </div>
         </section>
 
-        {/* Accept specific file types */}
         <section className="example">
           <h2 className="example__heading">Accept specific file types</h2>
           <div className="example__body">
@@ -65,7 +62,6 @@ export default function FileUploaderPage() {
           </div>
         </section>
 
-        {/* Multiple files */}
         <section className="example">
           <h2 className="example__heading">Multiple file upload</h2>
           <div className="example__body">
@@ -83,7 +79,6 @@ export default function FileUploaderPage() {
           </div>
         </section>
 
-        {/* Disabled */}
         <section className="example">
           <h2 className="example__heading">Disabled file uploader</h2>
           <div className="example__body">
@@ -100,7 +95,6 @@ export default function FileUploaderPage() {
           </div>
         </section>
 
-        {/* Error state */}
         <section className="example">
           <h2 className="example__heading">File uploader with error</h2>
           <div className="example__body">

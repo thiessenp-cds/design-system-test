@@ -22,7 +22,6 @@ export default function InputPage() {
 
       <main className="page__examples">
 
-        {/* Text input */}
         <section className="example">
           <h2 className="example__heading">Text input</h2>
           <div className="example__body">
@@ -44,7 +43,6 @@ export default function InputPage() {
           </div>
         </section>
 
-        {/* Email input */}
         <section className="example">
           <h2 className="example__heading">Email input</h2>
           <div className="example__body">
@@ -77,7 +75,6 @@ export default function InputPage() {
           </div>
         </section>
 
-        {/* Password input */}
         <section className="example">
           <h2 className="example__heading">Password input</h2>
           <div className="example__body">
@@ -107,7 +104,6 @@ export default function InputPage() {
           </div>
         </section>
 
-        {/* Number input */}
         <section className="example">
           <h2 className="example__heading">Number input</h2>
           <div className="example__body">
@@ -137,7 +133,6 @@ export default function InputPage() {
           </div>
         </section>
 
-        {/* Disabled input */}
         <section className="example">
           <h2 className="example__heading">Disabled input</h2>
           <div className="example__body">
@@ -156,7 +151,6 @@ export default function InputPage() {
           </div>
         </section>
 
-        {/* Input with error */}
         <section className="example">
           <h2 className="example__heading">Input with error</h2>
           <div className="example__body">

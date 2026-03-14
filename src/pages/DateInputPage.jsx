@@ -20,7 +20,6 @@ export default function DateInputPage() {
 
       <main className="page__examples">
 
-        {/* Full format */}
         <section className="example">
           <h2 className="example__heading">Full format (day, month, year)</h2>
           <div className="example__body">
@@ -40,7 +39,6 @@ export default function DateInputPage() {
           </div>
         </section>
 
-        {/* Compact format */}
         <section className="example">
           <h2 className="example__heading">Compact format (month and year)</h2>
           <div className="example__body">
@@ -60,7 +58,6 @@ export default function DateInputPage() {
           </div>
         </section>
 
-        {/* Required with pre-filled value */}
         <section className="example">
           <h2 className="example__heading">Required with pre-filled value</h2>
           <div className="example__body">
@@ -77,7 +74,6 @@ export default function DateInputPage() {
           </div>
         </section>
 
-        {/* Min and max constraints */}
         <section className="example">
           <h2 className="example__heading">With min and max constraints</h2>
           <div className="example__body">
@@ -95,7 +91,6 @@ export default function DateInputPage() {
           </div>
         </section>
 
-        {/* Disabled */}
         <section className="example">
           <h2 className="example__heading">Disabled date input</h2>
           <div className="example__body">
@@ -113,7 +108,6 @@ export default function DateInputPage() {
           </div>
         </section>
 
-        {/* Error state */}
         <section className="example">
           <h2 className="example__heading">Date input with error</h2>
           <div className="example__body">

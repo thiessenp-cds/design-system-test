@@ -20,7 +20,6 @@ export default function SearchPage() {
 
       <main className="page__examples">
 
-        {/* Basic */}
         <section className="example">
           <h2 className="example__heading">Basic search</h2>
           <div className="example__body">
@@ -35,7 +34,6 @@ export default function SearchPage() {
           </div>
         </section>
 
-        {/* Custom placeholder */}
         <section className="example">
           <h2 className="example__heading">Custom placeholder label</h2>
           <div className="example__body">
@@ -50,7 +48,6 @@ export default function SearchPage() {
           </div>
         </section>
 
-        {/* With suggested terms */}
         <section className="example">
           <h2 className="example__heading">With suggested search terms</h2>
           <div className="example__body">
@@ -72,7 +69,6 @@ export default function SearchPage() {
           </div>
         </section>
 
-        {/* Controlled with onGcdsInput */}
         <section className="example">
           <h2 className="example__heading">Controlled with live value</h2>
           <div className="example__body">
@@ -99,7 +95,6 @@ export default function SearchPage() {
           </div>
         </section>
 
-        {/* Custom action and POST method */}
         <section className="example">
           <h2 className="example__heading">Custom action and method</h2>
           <div className="example__body">

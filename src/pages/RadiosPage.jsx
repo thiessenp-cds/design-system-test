@@ -39,7 +39,6 @@ export default function RadiosPage() {
 
       <main className="page__examples">
 
-        {/* Basic yes / no */}
         <section className="example">
           <h2 className="example__heading">Basic radios</h2>
           <div className="example__body">
@@ -60,7 +59,6 @@ export default function RadiosPage() {
           </div>
         </section>
 
-        {/* Options with hint text */}
         <section className="example">
           <h2 className="example__heading">Options with hint text</h2>
           <div className="example__body">
@@ -83,7 +81,6 @@ export default function RadiosPage() {
           </div>
         </section>
 
-        {/* Pre-selected */}
         <section className="example">
           <h2 className="example__heading">Pre-selected option</h2>
           <div className="example__body">
@@ -106,7 +103,6 @@ export default function RadiosPage() {
           </div>
         </section>
 
-        {/* Disabled */}
         <section className="example">
           <h2 className="example__heading">Disabled radios</h2>
           <div className="example__body">
@@ -123,7 +119,6 @@ export default function RadiosPage() {
           </div>
         </section>
 
-        {/* Error state */}
         <section className="example">
           <h2 className="example__heading">Radios with error</h2>
           <div className="example__body">

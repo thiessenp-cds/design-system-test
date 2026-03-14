@@ -40,7 +40,6 @@ export default function CheckboxesPage() {
 
       <main className="page__examples">
 
-        {/* Basic group */}
         <section className="example">
           <h2 className="example__heading">Basic group</h2>
           <div className="example__body">
@@ -61,7 +60,6 @@ export default function CheckboxesPage() {
           </div>
         </section>
 
-        {/* Group with hint text per option */}
         <section className="example">
           <h2 className="example__heading">Options with hint text</h2>
           <div className="example__body">
@@ -84,7 +82,6 @@ export default function CheckboxesPage() {
           </div>
         </section>
 
-        {/* Pre-checked */}
         <section className="example">
           <h2 className="example__heading">Pre-selected option</h2>
           <div className="example__body">
@@ -102,7 +99,6 @@ export default function CheckboxesPage() {
           </div>
         </section>
 
-        {/* Single checkbox */}
         <section className="example">
           <h2 className="example__heading">Single checkbox (agreement)</h2>
           <div className="example__body">
@@ -119,7 +115,6 @@ export default function CheckboxesPage() {
           </div>
         </section>
 
-        {/* Disabled */}
         <section className="example">
           <h2 className="example__heading">Disabled checkboxes</h2>
           <div className="example__body">
@@ -136,7 +131,6 @@ export default function CheckboxesPage() {
           </div>
         </section>
 
-        {/* Error state */}
         <section className="example">
           <h2 className="example__heading">Checkboxes with error</h2>
           <div className="example__body">
