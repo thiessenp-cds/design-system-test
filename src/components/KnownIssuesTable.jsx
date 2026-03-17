@@ -28,7 +28,7 @@ const issues = [
 export default function KnownIssuesTable() {
   return (
     <section className="section">
-      <h2 className="section__heading">Known Issues</h2>
+      <h2 className="section__heading">Known Accessibility Issues</h2>
       <div className="known-issues-wrapper">
         <table className="known-issues-table">
           <thead>
