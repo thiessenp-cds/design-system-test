@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { GcdsRadios } from '@gcds-core/components-react'
 import { Link } from 'react-router-dom'
-import IssueTable from '../components/IssueTable'
 import '../styles/page.css'
 
 const yesNoOptions = [
@@ -55,7 +54,6 @@ export default function RadiosPage() {
                 </p>
               )}
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -77,7 +75,6 @@ export default function RadiosPage() {
                 </p>
               )}
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -99,7 +96,6 @@ export default function RadiosPage() {
                 </p>
               )}
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -115,7 +111,6 @@ export default function RadiosPage() {
                 disabled
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -131,7 +126,6 @@ export default function RadiosPage() {
                 errorMessage="Select yes or no to continue."
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 

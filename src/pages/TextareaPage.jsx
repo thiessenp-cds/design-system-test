@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { GcdsTextarea } from '@gcds-core/components-react'
 import { Link } from 'react-router-dom'
-import IssueTable from '../components/IssueTable'
 import '../styles/page.css'
 
 export default function TextareaPage() {
@@ -36,7 +35,6 @@ export default function TextareaPage() {
                 <p className="example__value">Value: <code>{feedbackValue}</code></p>
               )}
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -58,7 +56,6 @@ export default function TextareaPage() {
                 <p className="example__value">Characters: <code>{bioValue.length}</code></p>
               )}
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -76,7 +73,6 @@ export default function TextareaPage() {
                 value="123 Main Street&#10;Ottawa, ON&#10;K1A 0A6"
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -94,7 +90,6 @@ export default function TextareaPage() {
                 hideLimit
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -112,7 +107,6 @@ export default function TextareaPage() {
                 disabled
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -131,7 +125,6 @@ export default function TextareaPage() {
                 errorMessage="Description must be at least 20 characters."
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 

@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { GcdsSelect } from '@gcds-core/components-react'
 import { Link } from 'react-router-dom'
-import IssueTable from '../components/IssueTable'
 import '../styles/page.css'
 
 export default function SelectPage() {
@@ -51,7 +50,6 @@ export default function SelectPage() {
                 <p className="example__value">Selected: <code>{province}</code></p>
               )}
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -75,7 +73,6 @@ export default function SelectPage() {
                 <p className="example__value">Selected: <code>{language}</code></p>
               )}
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -107,7 +104,6 @@ export default function SelectPage() {
                 </optgroup>
               </GcdsSelect>
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -127,7 +123,6 @@ export default function SelectPage() {
                 <option value="qc">Quebec</option>
               </GcdsSelect>
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -149,7 +144,6 @@ export default function SelectPage() {
                 <option value="other">Other</option>
               </GcdsSelect>
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 

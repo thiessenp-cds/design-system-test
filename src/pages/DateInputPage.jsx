@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { GcdsDateInput } from '@gcds-core/components-react'
 import { Link } from 'react-router-dom'
-import IssueTable from '../components/IssueTable'
 import '../styles/page.css'
 
 export default function DateInputPage() {
@@ -35,7 +34,6 @@ export default function DateInputPage() {
                 <p className="example__value">Value: <code>{dateValue}</code></p>
               )}
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -54,7 +52,6 @@ export default function DateInputPage() {
                 <p className="example__value">Value: <code>{compactValue}</code></p>
               )}
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -70,7 +67,6 @@ export default function DateInputPage() {
                 required
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -87,7 +83,6 @@ export default function DateInputPage() {
                 max="2026-12-31"
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -104,7 +99,6 @@ export default function DateInputPage() {
                 disabled
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -121,7 +115,6 @@ export default function DateInputPage() {
                 errorMessage="Enter your date of birth to continue."
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 

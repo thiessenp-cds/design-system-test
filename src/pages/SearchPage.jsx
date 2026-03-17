@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { GcdsSearch } from '@gcds-core/components-react'
 import { Link } from 'react-router-dom'
-import IssueTable from '../components/IssueTable'
 import '../styles/page.css'
 
 export default function SearchPage() {
@@ -30,7 +29,6 @@ export default function SearchPage() {
                 placeholder="Canada.ca"
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -44,7 +42,6 @@ export default function SearchPage() {
                 placeholder="this site"
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -65,7 +62,6 @@ export default function SearchPage() {
                 ])}
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -91,7 +87,6 @@ export default function SearchPage() {
                 <p className="example__value">Last submitted: <code>{submittedTerm}</code></p>
               )}
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -107,7 +102,6 @@ export default function SearchPage() {
                 method="get"
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 

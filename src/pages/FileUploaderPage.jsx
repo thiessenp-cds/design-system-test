@@ -1,6 +1,5 @@
 import { GcdsFileUploader } from '@gcds-core/components-react'
 import { Link } from 'react-router-dom'
-import IssueTable from '../components/IssueTable'
 import '../styles/page.css'
 
 export default function FileUploaderPage() {
@@ -26,7 +25,6 @@ export default function FileUploaderPage() {
                 label="Upload a document"
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -42,7 +40,6 @@ export default function FileUploaderPage() {
                 required
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -58,7 +55,6 @@ export default function FileUploaderPage() {
                 accept="image/*"
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -75,7 +71,6 @@ export default function FileUploaderPage() {
                 multiple
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -91,7 +86,6 @@ export default function FileUploaderPage() {
                 disabled
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -108,7 +102,6 @@ export default function FileUploaderPage() {
                 errorMessage="You must upload a valid government-issued ID to continue."
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 

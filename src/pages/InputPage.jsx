@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { GcdsInput } from '@gcds-core/components-react'
 import { Link } from 'react-router-dom'
-import IssueTable from '../components/IssueTable'
 import '../styles/page.css'
 
 export default function InputPage() {
@@ -39,7 +38,6 @@ export default function InputPage() {
                 <p className="example__value">Value: <code>{textValue}</code></p>
               )}
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -62,16 +60,6 @@ export default function InputPage() {
                 <p className="example__value">Value: <code>{emailValue}</code></p>
               )}
             </div>
-            <IssueTable issues={[
-              {
-                combo: 'Chrome + TalkBack 15 (Android)',
-                description: 'Does not announce required.',
-                tickets: [
-                  { text: '#5842', href: 'https://github.com/cds-snc/platform-forms-client/issues/5842' },
-                  { text: '#5845', href: 'https://github.com/cds-snc/platform-forms-client/issues/5845' },
-                ],
-              },
-            ]} />
           </div>
         </section>
 
@@ -91,16 +79,6 @@ export default function InputPage() {
                 onGcdsInput={(e) => setPasswordValue(e.detail)}
               />
             </div>
-            <IssueTable issues={[
-              {
-                combo: 'Chrome + TalkBack 15 (Android)',
-                description: 'Does not announce required.',
-                tickets: [
-                  { text: '#5842', href: 'https://github.com/cds-snc/platform-forms-client/issues/5842' },
-                  { text: '#5845', href: 'https://github.com/cds-snc/platform-forms-client/issues/5845' },
-                ],
-              },
-            ]} />
           </div>
         </section>
 
@@ -121,15 +99,6 @@ export default function InputPage() {
                 onGcdsInput={(e) => setNumberValue(e.detail)}
               />
             </div>
-            <IssueTable issues={[
-              {
-                combo: 'All browsers (mouse/touch users)',
-                description: 'Increment/decrement spinner buttons are hidden by CSS, preventing pointer users from adjusting the value with the controls.',
-                tickets: [
-                  { text: '#1011', href: 'https://github.com/cds-snc/gcds-components/issues/1011' },
-                ],
-              },
-            ]} />
           </div>
         </section>
 
@@ -147,7 +116,6 @@ export default function InputPage() {
                 disabled
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -166,16 +134,6 @@ export default function InputPage() {
                 errorMessage="Enter a valid Canadian postal code."
               />
             </div>
-            <IssueTable issues={[
-              {
-                combo: 'Chrome + TalkBack 15 (Android)',
-                description: 'Does not announce required.',
-                tickets: [
-                  { text: '#5842', href: 'https://github.com/cds-snc/platform-forms-client/issues/5842' },
-                  { text: '#5845', href: 'https://github.com/cds-snc/platform-forms-client/issues/5845' },
-                ],
-              },
-            ]} />
           </div>
         </section>
 

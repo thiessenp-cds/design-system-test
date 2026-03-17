@@ -102,3 +102,40 @@ a.component-card:hover {
   color: var(--gcds-text-secondary);
   border-top: var(--gcds-border-width-sm) solid var(--gcds-border-default);
 }
+
+/* ── Known Issues Table ──────────────────────────────── */
+.known-issues-wrapper {
+  border: var(--gcds-border-width-sm) solid var(--gcds-border-default);
+  border-radius: var(--gcds-border-radius-md);
+  overflow: hidden;
+}
+
+.known-issues-table {
+  width: 100%;
+  border-collapse: collapse;
+  font: var(--gcds-font-text-small);
+}
+
+.known-issues-table th {
+  text-align: left;
+  padding: 0.5rem 1rem;
+  font-weight: var(--gcds-font-weights-semibold);
+  color: var(--gcds-text-secondary);
+  background: var(--gcds-bg-light);
+  border-bottom: var(--gcds-border-width-sm) solid var(--gcds-border-default);
+}
+
+.known-issues-table td {
+  padding: 0.625rem 1rem;
+  color: var(--gcds-text-primary);
+  vertical-align: top;
+  border-bottom: var(--gcds-border-width-sm) solid var(--gcds-border-default);
+}
+
+.known-issues-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.known-issues-table a {
+  color: var(--gcds-text-primary);
+}

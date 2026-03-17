@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { GcdsCheckboxes } from '@gcds-core/components-react'
 import { Link } from 'react-router-dom'
-import IssueTable from '../components/IssueTable'
 import '../styles/page.css'
 
 const colourOptions = [
@@ -56,7 +55,6 @@ export default function CheckboxesPage() {
                 </p>
               )}
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -78,7 +76,6 @@ export default function CheckboxesPage() {
                 </p>
               )}
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -95,7 +92,6 @@ export default function CheckboxesPage() {
                 ])}
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -111,7 +107,6 @@ export default function CheckboxesPage() {
                 required
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -127,7 +122,6 @@ export default function CheckboxesPage() {
                 disabled
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
@@ -143,7 +137,6 @@ export default function CheckboxesPage() {
                 errorMessage="Select at least one colour to continue."
               />
             </div>
-            <IssueTable issues={[]} />
           </div>
         </section>
 
