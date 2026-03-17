@@ -139,3 +139,29 @@ a.component-card:hover {
 .known-issues-table a {
   color: var(--gcds-text-primary);
 }
+
+.known-issues-table__resolution {
+  display: block;
+  margin-top: 0.35rem;
+  font-style: italic;
+  color: var(--gcds-text-secondary);
+}
+
+.known-issues-table__status {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--gcds-border-radius-sm);
+  font-weight: var(--gcds-font-weights-semibold);
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.known-issues-table__status--resolved {
+  background: #d4edda;
+  color: #155724;
+}
+
+.known-issues-table__status--open {
+  background: #fff3cd;
+  color: #856404;
+}

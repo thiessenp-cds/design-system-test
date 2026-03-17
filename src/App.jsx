@@ -8,6 +8,7 @@ import FileUploaderPage from './pages/FileUploaderPage'
 import DateInputPage from './pages/DateInputPage'
 import SearchPage from './pages/SearchPage'
 import CompleteFormPage from './pages/CompleteFormPage'
+import KnownIssuesTable from './components/KnownIssuesTable'
 import './App.css'
 
 const components = [
@@ -55,41 +56,7 @@ function HomePage() {
           </div>
         </section>
 
-        <section className="section">
-          <h2 className="section__heading">Known Issues</h2>
-          <div className="known-issues-wrapper">
-            <table className="known-issues-table">
-              <thead>
-                <tr>
-                  <th>Component</th>
-                  <th>Browser / AT</th>
-                  <th>Issue</th>
-                  <th>Tickets</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Input required</td>
-                  <td>Chrome + TalkBack 15 (Android)</td>
-                  <td>Does not announce required.</td>
-                  <td>
-                    <a href="https://github.com/cds-snc/platform-forms-client/issues/5842" target="_blank" rel="noreferrer">#5842</a>
-                    {' '}
-                    <a href="https://github.com/cds-snc/platform-forms-client/issues/5845" target="_blank" rel="noreferrer">#5845</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Input number</td>
-                  <td>All browsers (mouse/touch users)</td>
-                  <td>Increment/decrement spinner buttons are hidden by CSS, preventing pointer users from adjusting the value with the controls.</td>
-                  <td>
-                    <a href="https://github.com/cds-snc/gcds-components/issues/1011" target="_blank" rel="noreferrer">#1011</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
+        <KnownIssuesTable />
       </main>
 
       <footer className="site-footer">
