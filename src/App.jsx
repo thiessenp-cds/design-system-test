@@ -35,7 +35,7 @@ function HomePage() {
     <div className="app">
       <header className="site-header">
         <div className="site-header__inner">
-          <h1 className="site-header__title">Design System Component Test</h1>
+          <h1 className="site-header__title">My Design System Component Test</h1>
         </div>
       </header>
 
