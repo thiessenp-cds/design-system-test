@@ -59,9 +59,9 @@ function HomePage() {
         <KnownIssuesTable />
       </main>
 
-      <footer className="site-footer">
+      {/* <footer className="site-footer">
         <p>Hosted on GitHub Pages · Built with React + Vite · GC Design System</p>
-      </footer>
+      </footer> */}
     </div>
   )
 }
