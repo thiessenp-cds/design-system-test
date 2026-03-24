@@ -23,24 +23,6 @@ const issues = [
       { text: '#1011', href: 'https://github.com/cds-snc/gcds-components/issues/1011' },
     ],
   },
-  {
-    component: 'Labeled form inputs',
-    browserAt: 'Chrome + TalkBack (Android)',
-    issue: 'TalkBack announces the label text twice — once from the <label> element associated via htmlFor/id, and again from the label\'s text content being picked up as adjacent text.',
-    status: 'open',
-    tickets: [
-      { text: 'crbug.com/1188511', href: 'https://crbug.com/1188511' },
-    ],
-  },
-  {
-    component: 'Fieldset / radio group',
-    browserAt: 'Chrome + TalkBack (Android)',
-    issue: 'When navigating into a <fieldset>, TalkBack announces the <legend> text twice — once when entering the fieldset group, and again when focusing the first radio input inside (Chrome sends both the fieldset\'s group label and the input\'s label).',
-    status: 'open',
-    tickets: [
-      { text: 'crbug.com/869724', href: 'https://crbug.com/869724' },
-    ],
-  },
 ]
 
 export default function KnownIssuesTable() {
